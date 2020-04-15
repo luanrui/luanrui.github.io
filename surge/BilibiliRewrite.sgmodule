@@ -1,0 +1,11 @@
+#!name=Bilibili Rewrite
+#!desc=URL Rewrite
+#!system=ios
+
+[URL Rewrite]
+
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl http://api.bili.best/playurl 302
+https:\/\/api.bilibili.com\/pgc\/view\/app\/season http://api.bili.best/season 302
+
+[MITM]
+hostname = %APPEND% api.bilibili.com
